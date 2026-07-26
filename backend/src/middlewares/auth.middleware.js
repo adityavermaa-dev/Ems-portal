@@ -16,3 +16,10 @@ function authMiddleware(req,res,next){
 }
 
 module.exports = authMiddleware;
+
+
+/**
+ * In next version i have also have to verify the role and the status
+ * of the user from the database as the jwt can have the old role stored
+ * so querying it from the database give the correct role which improves our security.
+ */
